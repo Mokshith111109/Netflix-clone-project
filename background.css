@@ -1,0 +1,418 @@
+* { margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    overflow-x:hidden;
+}
+header{
+    background-image:url(images/backgroundimg.jpg);
+    height:80vh;
+    width:100%;
+    background-size: auto;
+    position:relative;
+    margin-bottom: 5%;
+}
+.box{
+    height:80vh;
+    width:100%;
+    background-color:black;
+    opacity:0.7;
+    position:absolute;
+    z-index: 1;
+}
+nav{
+    display:flex;
+    justify-content:space-between;
+    position:relative;
+    max-width: 80vw;
+    margin: 0px 100px 0px 100px;
+    height: 30px;
+    top: 20px;
+    z-index:10;
+}
+nav img{
+    z-index: 10;
+}
+.language{
+    font-family:'helevetica neue',helvetica,arial,sans-serif;
+    padding: 3px 15px;
+    background-color: transparent;
+    color:white;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size:larger;
+    font-weight:300;
+}
+.btn{
+    text-decoration: none;
+    display: inline-block;
+    height: 59;
+    width: 86px;
+    font-family:'helevetica neue',helvetica,arial,sans-serif;
+    background-color: red;
+    color:#e0e0e0;
+    padding: 3px 15px;
+    border:2px red;
+    border-radius: 4px;
+    font-size:larger;
+    font-weight: 300;
+}
+.sodhi{
+    margin:0px 0px 8px;
+    max-width: 40vw;
+    height: 100%;
+    margin: auto;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    z-index: 10;
+    position:relative;
+    gap: 10px;
+}
+.sodhi h1{
+    margin: 0px 0px 16px;
+    text-align: center;
+    display: block;
+    font-size: 3.2em;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    font-family:'helevetica neue',helvetica,arial,sans-serif;
+}
+.sodhi p{
+    margin: 0px 0px 16px;
+    text-align: center;
+    display: block;
+    font-size: 1.3em;
+    unicode-bidi: isolate;
+    font-family:'helevetica neue',helvetica,arial,sans-serif;
+}
+.sodhi h3{
+    margin: 0px 0px 8px;
+    white-space:nowrap;
+    max-width: none;
+    text-align: center;
+    display: block;
+    font-size: 1em;
+    font-family:"Roboto",helvetica,arial,sans-serif;
+}
+.signup{
+    border: none;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 8px;
+}
+.signup input {
+    background-color: transparent;
+    width: 350px;
+    height: 56px;
+    padding: 0 16px;
+    font-size: 1rem;
+    border: gray 1px solid;
+    border-radius: 10px;
+}
+.signup button {
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    text-decoration: none;
+    height: 56px;
+    width: 200px;
+    padding: 0 24px;
+    background: #e50914;
+    color: white;
+    font-size: 1.35rem;
+    font-weight: 650;
+    border: none;
+    border-radius: 50px;
+}
+.sampu {
+    position: relative;
+    height:70px;
+    margin-top: -80px;
+    background:none;
+}
+.curve {
+    position: absolute;
+    right: -25%;
+    left: -25%;                
+    bottom: 0;
+    width: 150%;
+    height: 80px;
+    border-top: 2px solid #ff2a5a;
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+    background: radial-gradient(ellipse at top, #1a1a9c 0%, #000 70%);
+    box-shadow: 0 -8px 30px rgba(229, 9, 20, 0.4); 
+}
+.trending-section {
+    margin-top: 0;
+    padding: 40px;
+    background-color: #000;
+    color: #fff;
+}
+.trending-section h2 {
+    margin-left: 8vw;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    font-family:'helevetica neue', helvetica, arial, sans-serif;
+}
+.row{
+    display:flex;
+    gap: 50px;
+    overflow-x: auto;
+    padding: 10px 0 10px 40px;
+    scrollbar-width: none;
+}
+.row::-webkit-scrollbar{ display: none;}
+.card{
+    position: relative;
+    flex: 0 0 auto;
+}
+.card img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+}
+.rank{
+    position: absolute;
+    left: -40px;
+    bottom: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 110px;
+    font-weight: 900;
+    line-height: 1;
+    color:#000;
+    -webkit-text-stroke: 3px white;
+}
+.more-reasons {
+    margin-top: 0;
+    padding: 40px 5%;
+    background-color: black;
+    color: #fff;
+    display:block;
+}
+.more-reasons h2{
+    font-size: 24px;
+    margin-bottom: 40px;
+    font-style: "helvetica",helvetica,arial,sans-serif;
+}
+.more-con{
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+}
+.feature{
+    position: relative;
+    min-width: 260px;
+    max-width: 200px;
+    height: 350px;
+    padding: 30px 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 18px;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #1b2a72, #21164f, #301044);
+}
+.feature h2{
+    font-size: 24px;
+    margin: 0 0 25px;
+}
+.feature p{
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ddd;
+}
+.faq-section {
+    background: #000;
+    color: #fff;
+    padding: 50px 5%;
+}
+
+.faq-section h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.faq-item {
+    background: #2d2d2d;
+    margin-bottom: 8px;
+    color: #fff;
+}
+.faq-item summary {
+    list-style: none;
+    cursor: pointer;
+
+    padding: 25px 30px;
+
+    font-size: 24px;
+    font-weight: 500;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+.faq-item summary::marker {
+    display: none;
+}
+.faq-item summary::after {
+    content: "+";
+    font-size: 40px;
+    font-weight: 200;
+    line-height: 1;
+}
+.faq-item[open] summary::after {
+    content: "×";
+}
+.faq-item summary:hover {
+    background: #414141;
+}
+.faq-item p {
+    margin: 0;
+    padding: 0 30px 30px 30px;
+
+    font-size: 20px;
+    line-height: 1.5;
+    color: #fff;
+}
+.faq-section h3{
+    margin: 0px 0px 8px;
+    white-space:nowrap;
+    max-width: none;
+    text-align: center;
+    display: block;
+    font-size: 1em;
+    font-family:"Roboto",helvetica,arial,sans-serif;
+}
+.signup{
+    border: none;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 8px;
+}
+.signup input {
+    background-color: transparent;
+    width: 350px;
+    height: 56px;
+    padding: 0 16px;
+    font-size: 1rem;
+    border: gray 1px solid;
+    border-radius: 10px;
+}
+.signup button {
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    text-decoration: none;
+    height: 56px;
+    width: 200px;
+    padding: 0 24px;
+    background: #e50914;
+    color: white;
+    font-size: 1.35rem;
+    font-weight: 650;
+    border: none;
+    border-radius: 50px;
+}
+.footer {
+    background-color: #000;
+    color: #737373;
+    padding: 70px 8% 40px;
+    font-size: 14px;
+}
+.footer-contact {
+    margin: 0 0 35px;
+    font-size: 16px;
+    color: #737373;
+}
+.footer-contact a {
+    color: #737373;
+}
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+}
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.footer-col a {
+    color: #737373;
+    text-decoration: underline;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.footer-col a:hover {
+    color: #b3b3b3;
+}
+.footer-lang {
+    margin-top: 35px;
+}
+.lang-select {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #737373;
+    border-radius: 3px;
+    padding: 12px 35px 12px 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.footer::after {
+    content: "Netflix India";
+    display: block;
+    margin-top: 55px;
+    font-size: 14px;
+    color: #737373;
+}
+@media (max-width: 768px) {
+
+    .footer {
+        padding: 50px 6% 35px;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px 20px;
+    }
+
+    .footer-contact {
+        font-size: 15px;
+    }
+}
+@media (max-width: 480px) {
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px 15px;
+    }
+
+    .footer-col {
+        gap: 14px;
+    }
+
+    .footer-col a {
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/netflix.jpg">
+    <title>Netflix-Watch Shows Online,Watch Movies Online</title>
+    <link rel="stylesheet" href="lbackground.css">
+</head>
+<body>
+    <header>
+        <div class="box"></div>
+        <nav><img src="/images/netflix logo.svg" alt="logo" width="245px" height="40px">
+         <div>
+    </header>
+    <main>
+        <div class="verification-box">
+            <h1>Enter the code we sent to<br>your email</h1>
+            <div class="email-box">
+                <span id="user-email"></span>
+                <a href="#">Change</a>
+            </div>
+            <div class="code-boxes">
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+            </div>
+            <p class="expiry">
+                This code will expire in 15 minutes.
+            </p>
+            <p class="resend">
+                Did not get a code?
+                <a href="#">Resend code</a>
+            </p>
+            <div class="help">
+                <span>Get Help</span>
+                <span class="arrow">⌄</span>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footer-contact">Questions? Call 000-800-919-1694</p>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <a href="#">FAQ</a>
+                <a href="#">Privacy</a>
+            </div>
+            <div class="footer-col">
+                <a href="#">Help Center</a>
+                <a href="#">Cookie Preferences</a>
+            </div>
+            <div class="footer-col">
+                <a href="#">Terms of Use</a>
+                <a href="#">Corporate Information</a>
+            </div>
+        </div>
+        <select class="lang-select footer-lang">
+            <option>English</option>
+            <option>Hindi</option>
+        </select>
+    </footer>
+    <script>
+     const params= new URLSearchParams(window.location.search);
+     const email= params.get("email");
+     document.getElementById("user-email").textContent=email;
+    </script>
+</body>
+</html>
